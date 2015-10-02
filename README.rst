@@ -20,7 +20,7 @@ You will another documentation here:
     - `API`_
     - `Development guide`_
  
-.. _Watcher: http://factory.b-com.com/www/watcher
+.. _Watcher: http://factory.b-com.com/www/watcher/
 .. _wiki: https://wiki.openstack.org/wiki/Watcher
 .. _nanoconfig: https://github.com/nanomsg/nanoconfig
 .. _Ceilometer: http://docs.openstack.org/developer/ceilometer/
@@ -28,4 +28,4 @@ You will another documentation here:
 .. _Architecture: ./doc/source/dev/architecture.rst
 .. _Installation guide: ./doc/source/deploy/installation.rst
 .. _API: ./doc/source/api/reference.rst
-.. _Development guide: ./doc/source/dev/quicktart.rst
+.. _Development guide: ./doc/source/dev/quickstart.rst
