@@ -1,0 +1,18 @@
+pbr
+oslo.config
+oslo.i18n
+oslo.log
+requests
+python-keystoneclient
+python-ceilometerclient
+six
+msgpack-python
+nanomsg
+stevedore
+riemann-client
+python-dateutil
+# trollius
+
+# Should be updated to work with Python 3 whenever https://github.com/google/protobuf/pull/166 gets merged
+# -e 'git+https://github.com/google/protobuf.git@master#egg=protobuf&subdirectory=python' --install-option="--cpp_implementation"
+#protobuf-py3
