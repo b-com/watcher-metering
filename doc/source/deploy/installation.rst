@@ -1,20 +1,20 @@
 Installation procedures
 =======================
 
-******************
-libnano libraries
-******************
+********************************
+nanomsg and nanoconfig libraries
+********************************
 Communication channels between ``Agent`` and ``Publisher`` modules are supported by `nanomsg`_ library.
 
-We integrated also the `nanoconfig`_ library to automatically configure communication channels between Agents and Publishers. It is mainly useful if you deploy several Agents and Publishers, but it is optional.
+We also integrated  the `nanoconfig`_ library to automatically configure communication channels between Agents and Publishers. It is mainly useful if you deploy several Agents and Publishers, but it is optional.
 
-You can install these libraries from packages (Debian only) or re-build them.
+You can install these libraries from packages (Debian only) or re-build them. These ones are required to deploy a Watcher Metering Agent or a Watcher Metering Publisher.
 
-Install libnano packages
-^^^^^^^^^^^^^^^^^^^^^^^^
+Install nanomsg and nanoconfig packages
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Debian packages are available on B<>COM Factory.
 
-1. Install the libnanomsg library: 
+1. Install the nanomsg library: 
     
   .. code:: shell
 
@@ -22,7 +22,7 @@ Debian packages are available on B<>COM Factory.
      $ wget http://factory.b-com.com/www/watcher/download/watcher-metering/libnanomsg_0.6.0_all.deb
      $ sudo dpkg -i libnanomsg_0.6.0_all.deb
 
-2. Install the libnanoconfig library: 
+2. Install the nanoconfig library: 
     
   .. code:: shell
 
@@ -31,7 +31,7 @@ Debian packages are available on B<>COM Factory.
       $ sudo dpkg -i libnanoconfig_0.0.1-beta_all.deb
 
 Build libraries
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 You can compile the `nanomsg`_ and `nanoconfig`_ libraries from the source code. Here is on way to do it:
 
 1. Install requirements for Ubuntu or similar distribution:
@@ -74,6 +74,8 @@ Please also refer the instructions available on their ``README`` files.
 **********************
 Watcher Metering Agent
 **********************
+
+At this point, we suppose you've already installed nanomsg and nanoconfig librairies.
 
 Install the agent
 ^^^^^^^^^^^^^^^^^
@@ -161,6 +163,9 @@ can still use the following to access its documentation:
 Watcher Metering Publisher
 **************************
 
+At this point, we suppose you've already installed nanomsg and nanoconfig librairies.
+
+
 Install the publisher
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -239,3 +244,4 @@ can still use the following to access its documentation:
 .. _Ceilometer: http://docs.openstack.org/developer/ceilometer/
 .. _Github: http://todfiine
 .. _Riemann: :http://riemann.io/
+.. _Github_: https://github.com/b-com/watcher-metering-drivers
