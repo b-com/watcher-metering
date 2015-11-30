@@ -150,6 +150,30 @@
 #datacenter = <None>
 
 
+[metrics_store.influxdb]
+
+#
+# From watcher_metering.store
+#
+
+# The default InfluxDB host, e.g. localhost (string value)
+#default_host = localhost
+
+# The default InfluxDB port, e.g. 8086 (integer value)
+#default_port = 8086
+
+# The default database name where data are stored.
+#default_database = watcher_metrics
+
+# The default username used. (string value)
+#default_username = root
+
+# The password of the user (string value)
+#default_password = root
+
+# This value indicates if the database must be created (boolean value)
+#create_database = False
+
 [publisher]
 
 #

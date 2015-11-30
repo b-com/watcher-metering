@@ -1,16 +1,17 @@
-pbr
-oslo.config
-oslo.i18n
-oslo.log
-requests
-python-keystoneclient
-python-ceilometerclient
-six
-msgpack-python
-nanomsg
-stevedore
-riemann-client
-python-dateutil
+influxdb>=2.10.0
+msgpack-python>=0.4.6
+nanomsg>=1.0
+oslo.config>=2.3.0
+oslo.i18n>=1.5.0
+oslo.log>=1.8.0
+pbr>=1.6
+python-ceilometerclient>=1.5.0
+python-dateutil>=2.4.2
+python-keystoneclient>=1.6.0,!=1.8.0
+requests>=2.8.1
+riemann-client>=6.1.3
+six>=1.9.0
+stevedore>=1.5.0
 # trollius
 
 # Should be updated to work with Python 3 whenever https://github.com/google/protobuf/pull/166 gets merged

@@ -205,9 +205,11 @@ By default, the Watcher Metering Publisher does not use ``nanoconfig`` server to
 
 To enable ``nanoconfig`` function, set the parameter named ``use_nanoconfig_service`` to ``true`` and complete also nanoconfig URI endpoints (``nanoconfig_service_endpoint`` and ``nanoconfig_update_endpoint``).
 
-The Watcher Metering Publisher can push metering data either to a `Riemann`_ CEP module (default configuration) or directly into `Ceilometer`_, according to the parameter named ``metrics_store``. 
+The Watcher Metering Publisher can push metering data either to a `Riemann`_ CEP module (default configuration) or directly into `Ceilometer`_ or into `InfluxDB`_ database , according to the parameter named ``metrics_store``.
 
 The section ``[metrics_store.riemann]`` groups all parameters useful to interact with a Riemann CEP. If you use a CEP Riemann service, complete at least the  Riemann endpoint URI ``store_endpoint``.
+
+The section ``[metrics_store.influxdb]`` groups all parameters useful to interact with an InfluxDB Database. If you use an InfluxDB Database, complete at least the following parameters ``default_host``, ``default_database``.
 
 If you want to use Ceilometer as storage backend, don't forget to complete the section ``[keystone_authtoken]``, in order to allow the Watcher Metering Publisher to query the Identity Service for token, before to push metering data into Ceilometer.
 
@@ -244,4 +246,5 @@ can still use the following to access its documentation:
 .. _Ceilometer: http://docs.openstack.org/developer/ceilometer/
 .. _Github: http://todfiine
 .. _Riemann: :http://riemann.io/
+.. _InfluxDB: https://influxdb.com/
 .. _Github_: https://github.com/b-com/watcher-metering-drivers

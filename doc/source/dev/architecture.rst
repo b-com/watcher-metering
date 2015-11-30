@@ -29,7 +29,7 @@ The Publisher is responsible for gathering metrics from multiple Agent nodes, be
 
 The Publisher workflow is the following:
 
-* It loads the configuration which defines the store to use (Riemann_ or Ceilometer_)
+* It loads the configuration which defines the store to use (Riemann_ , Ceilometer_ or InfluxDB_)
 * It receives a measurement from an Agent
 * The measurement is pre-processed to match the format the store requires
 * The formatted metric is then sent to the store
@@ -46,5 +46,6 @@ We use `nanomsg`_ facility to enable communication between Agent(s) and Publishe
 .. _quickstart: ./quickstart.rst
 .. _watcher-metering-drivers: https://github.com/b-com/watcher-metering-drivers
 .. _Riemann: http://riemann.io
+.. _InfluxDB: https://influxdb.com/
 .. _Ceilometer: https://wiki.openstack.org/wiki/Ceilometer
 .. _nanomsg: https://github.com/nanomsg/nanomsg
