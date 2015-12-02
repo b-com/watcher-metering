@@ -164,7 +164,7 @@ class InfluxClient(MetricsStoreClientBase):
             if not isinstance(metric, dict):
                 raise MetricsStoreError("Invalid dictionary")
 
-            mandatory_fields = ("name", "unit", "type_", "value",
+            mandatory_fields = ("name", "unit", "type", "value",
                                 "resource_id", "host", "timestamp")
 
             if not set(mandatory_fields).issubset(metric.keys()):
@@ -192,7 +192,7 @@ class InfluxClient(MetricsStoreClientBase):
         tags = {
             'counter_name': metric['name'],
             'counter_unit': metric['unit'],
-            'counter_type': metric['type_'],
+            'counter_type': metric['type'],
             'counter_volume': metric['value'],
             'host': metric['host'],
             'resource_id': metric['resource_id']

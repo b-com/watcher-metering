@@ -17,12 +17,13 @@
 
 from oslo_config import cfg
 from watcher_metering.store.ceilometer import CeilometerClient
+from watcher_metering.store.influxdb import InfluxClient
 from watcher_metering.store.riemann import RiemannClient
-
 
 STORES = (
     RiemannClient,
     CeilometerClient,
+    InfluxClient,
 )
 
 

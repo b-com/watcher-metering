@@ -128,7 +128,6 @@ class PublisherServerBase(threading.Thread):
             except (ValueError,
                     msgpack.ExtraData,
                     nanomsg.NanoMsgError) as exc:
+                LOG.exception(exc)
                 LOG.error(
-                    "Exception upon receiving message from agent `%s`",
-                    exc.args[0]
-                )
+                    "Exception upon receiving message from agent")

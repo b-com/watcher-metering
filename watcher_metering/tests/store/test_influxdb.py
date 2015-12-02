@@ -88,7 +88,7 @@ class TestInfluxDBClient(BaseTestCase):
             ("name", "compute.node.cpu.percent"),
             ("timestamp", "2015-08-04T15:15:45.703542"),
             ("unit", "%"),
-            ("type_", "gauge"),
+            ("type", "gauge"),
             ("value", 97.9),
             ("resource_id", ""),
             ("host", "test_node"),
@@ -108,7 +108,7 @@ class TestInfluxDBClient(BaseTestCase):
             ("name", "compute.node.cpu.percent"),
             ("timestamp", "2015-08-04T15:15:45.703542"),
             ("unit", "%"),
-            ("type", "gauge"),  # wrong name
+            ("type_", "gauge"),  # wrong name
             ("value", 97.9),
             ("resource_id", ""),
             ("host", "test_node"),
